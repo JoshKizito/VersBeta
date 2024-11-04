@@ -24,3 +24,16 @@ function isView(element) {
     rect.bottom > 0 && rect.top < (window.innerHeight - 150 || document.documentElement.clientHeight -150)
   )
 }
+
+
+// BERGUER MENU OPEN AND CLOSED
+
+const burguerMenuButton = document.querySelector('.header__btns')
+const burguerMenuButtonIcon = document.querySelector('.header__btns i')
+const burguerMenu = document.querySelector('.burger__menu')
+
+burguerMenuButton.onclick = function(){
+  burguerMenu.classList.toggle('open')
+  const isOpen = burguerMenu.classList.contains('open')
+  burguerMenuButtonIcon.classList = isOpen ? 'fa-solid fa-x' : 'fa-solid fa-bars'
+}

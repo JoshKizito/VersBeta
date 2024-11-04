@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/bg.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>Back-Gestion</title>
@@ -13,8 +14,9 @@
     <header class="header">
         <div class="container header__container">
             <div class="header__logo">
-                <!-- <img src="./images/logo.svg" alt="" class="header__img"> -->
-                 <p>Back.Ges Pro <span>Office</span></p>
+                <img src="./images/bg.png" alt="" class="header__img">
+                 <!-- <p>Back.Ges Pro <span>Office</span></p> -->
+
             </div>
             <div class="header__elements">
                 <ul class="header__list">
@@ -33,21 +35,32 @@
                             </path>
                         </svg>
                     </button> -->
-                    <button class="header__button header__OpenMenu">
+                    <!-- <button class="header__button header__OpenMenu">
                         <svg class="header__iconOpen" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="aliceblue" viewBox="0 0 256 256">
                             <path class="header__iconOpen"
                                 d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
                             </path>
                         </svg>
-                    </button>
+                    </button> -->
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
+
+        <div class="burger__menu">
+            <ul class="header__list__menu">
+                <li class="header__item"><a href="#acceuil" id="acceuil">Acceuil</a></li>
+                <li class="header__item"><a href="#services">Services</a></li>
+                <li class="header__item"><a href="#apropos">A propos</a></li>
+                <li class="header__item"><a href="#objectifs">Objectifs</a></li>
+                <li class="header__item"><a id="contact">Contactez-nous</a></li>
+            </ul>
+        </div>
     </header>
-    <div class="home">
+    <section class="home home__backImage">
         <div class="container home__container">
             <div class="home__card home__text">
-                <h2 class="home__title">Back Gestion Service <span>Pro</span></h2>
+                <h2 class="home__title">Back Gestion <br> Service <span>Pro</span></h2>
                 <div class="home__content">
                     service de la gestion administrative et opérationnelle des entreprises, avec un engagement ferme envers l’excellence. 
                 </div>
@@ -73,38 +86,38 @@
                 <!-- <button class="home__button">Essayez-le</button> -->
             </div>
             <div class="home__card home__image">
-                <!-- <img src="/images/hand.png" alt="" class="home__img"> -->
+                <img src="./images/office__first.svg" alt="" class="home__img">
             </div>
         </div>
-    </div>
+    </section>
     <!-- Element bottom  -->
-    <div id="services" class="elements__bottom">
+    <section id="services" class="elements__bottom">
        <div class="container elements__bottom__container block__scrolle">
-        <div class="elements__bottom__card view__scrolled">    
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6dd41c" viewBox="0 0 256 256"><path d="M136,72v43.05l36.42-18.21a8,8,0,0,1,7.16,14.31l-48,24A8,8,0,0,1,120,128V72a8,8,0,0,1,16,0Zm-8,144a88,88,0,1,1,88-88,8,8,0,0,0,16,0A104,104,0,1,0,128,232a8,8,0,0,0,0-16Zm103.73,5.94a8,8,0,1,1-15.46,4.11C213.44,215.42,203.46,208,192,208s-21.44,7.42-24.27,18.05A8,8,0,0,1,160,232a8.15,8.15,0,0,1-2.06-.27,8,8,0,0,1-5.67-9.79,40,40,0,0,1,17.11-23.32,32,32,0,1,1,45.23,0A40,40,0,0,1,231.73,221.94ZM176,176a16,16,0,1,0,16-16A16,16,0,0,0,176,176Z"></path></svg>
-            <div class="elements__bottom__content">
-                Gestion des plannings
+            <div class="elements__bottom__card view__scrolled">    
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M136,72v43.05l36.42-18.21a8,8,0,0,1,7.16,14.31l-48,24A8,8,0,0,1,120,128V72a8,8,0,0,1,16,0Zm-8,144a88,88,0,1,1,88-88,8,8,0,0,0,16,0A104,104,0,1,0,128,232a8,8,0,0,0,0-16Zm103.73,5.94a8,8,0,1,1-15.46,4.11C213.44,215.42,203.46,208,192,208s-21.44,7.42-24.27,18.05A8,8,0,0,1,160,232a8.15,8.15,0,0,1-2.06-.27,8,8,0,0,1-5.67-9.79,40,40,0,0,1,17.11-23.32,32,32,0,1,1,45.23,0A40,40,0,0,1,231.73,221.94ZM176,176a16,16,0,1,0,16-16A16,16,0,0,0,176,176Z"></path></svg>
+                <div class="elements__bottom__content">
+                    Gestion des plannings
+                </div>
             </div>
-        </div>
-        <div class="elements__bottom__card view__scrolled">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6dd41c" viewBox="0 0 256 256"><path d="M216,72H131.31L104,44.69A15.86,15.86,0,0,0,92.69,40H40A16,16,0,0,0,24,56V200.62A15.4,15.4,0,0,0,39.38,216H216.89A15.13,15.13,0,0,0,232,200.89V88A16,16,0,0,0,216,72ZM92.69,56l16,16H40V56ZM216,200H40V88H216Zm-88-88a8,8,0,0,1,8,8v16h16a8,8,0,0,1,0,16H136v16a8,8,0,0,1-16,0V152H104a8,8,0,0,1,0-16h16V120A8,8,0,0,1,128,112Z"></path></svg>
-            <div class="elements__bottom__content">
-                Traitement des documents
+            <div class="elements__bottom__card view__scrolled">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M216,72H131.31L104,44.69A15.86,15.86,0,0,0,92.69,40H40A16,16,0,0,0,24,56V200.62A15.4,15.4,0,0,0,39.38,216H216.89A15.13,15.13,0,0,0,232,200.89V88A16,16,0,0,0,216,72ZM92.69,56l16,16H40V56ZM216,200H40V88H216Zm-88-88a8,8,0,0,1,8,8v16h16a8,8,0,0,1,0,16H136v16a8,8,0,0,1-16,0V152H104a8,8,0,0,1,0-16h16V120A8,8,0,0,1,128,112Z"></path></svg>
+                <div class="elements__bottom__content">
+                    Traitement des documents
+                </div>
             </div>
-        </div>
-        <div class="elements__bottom__card view__scrolled">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6dd41c" viewBox="0 0 256 256"><path d="M216,48H40a8,8,0,0,0-8,8V208a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V160h48v16a16,16,0,0,0,16,16h40a16,16,0,0,0,16-16V56A8,8,0,0,0,216,48ZM88,208H48V128H88Zm0-96H48V64H88Zm64,32H104V64h48Zm56,32H168V128h40Zm0-64H168V64h40Z"></path></svg>
-            <div class="elements__bottom__content">
-                Gestion des stocks
+            <div class="elements__bottom__card view__scrolled">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#b07830" viewBox="0 0 256 256"><path d="M216,48H40a8,8,0,0,0-8,8V208a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V160h48v16a16,16,0,0,0,16,16h40a16,16,0,0,0,16-16V56A8,8,0,0,0,216,48ZM88,208H48V128H88Zm0-96H48V64H88Zm64,32H104V64h48Zm56,32H168V128h40Zm0-64H168V64h40Z"></path></svg>
+                <div class="elements__bottom__content">
+                    Gestion des stocks
+                </div>
             </div>
-        </div>
        </div>
-    </div>
+    </section>
     <!-- Begin About -->
     <div class="about">
         <div class="container about__container block__scrolle">
             <div class="about__card about__image view__scrolled">
-                <img src="./images/info_section_image.jpg" alt="" class="about__img">
+                <!-- <img src="./images/pexels4.jpg" alt="" class="about__img"> -->
             </div>
             <div class="about__card about__text">
                 <h2 class="about__title view__scrolled">Pourquoi me choisir ?</h2>
@@ -145,7 +158,7 @@
                 <h2 class="abouthead__title">A PROPOS DE NOUS</h2>
                 <p class="abouthead__content">Nous vous aidons à mettre en place une stratégie digitale 
                     en vue de développer votre activité.</p>
-                <a class="abouthead__link" href="#">En choisissant BG Gestion Pro, vous avez l'assurance de collaborer avec une personne qui place l'intégrité, la rigueur et l'engagement au cœur de son activité.</a>
+                <p class="abouthead__link" >En choisissant BG Gestion Pro, vous avez l'assurance de collaborer avec une personne qui place l'intégrité, la rigueur et l'engagement au cœur de son activité.</p>
                 <div class="abouthead__bule-bottom"></div>
             </div>
             <div class="abouthead__right view__scrolled">
@@ -164,17 +177,16 @@
               <div class="aboutBanner__text">
                 <h3 class="aboutBanner__title">About </h3>
                  <p class="aboutBanner__content">
-                    Chez BG Gestion Pro, j'apporte toute mon expertise et ma passion à la gestion administrative et opérationnelle des entreprises, avec une approche fondée sur des valeurs solides d'intégrité, de rigueur et de foi chrétienne. Mon objectif est simple : offrir des solutions sur mesure qui vous aident à optimiser vos processus tout en créant un environnement de travail serein et efficace.
+                    Chez BG Gestion Pro, je mets à votre service une expertise bilingue en néerlandais et en français, combinée à une solide expérience dans la facturation, la relation clientèle et la comptabilité. Ces compétences me permettent d’offrir un support Back Office efficace, adapté aux exigences administratives et opérationnelles de chaque entreprise.
                   <!-- Bauzar - Digital est une société IT, basée sur la création de site web, Application Mobile, et l'automatisation des produits techniques. Nous travaillons
                   dans plusieurs domaines : éducatif, médical, Domaine Public, des Entreprise et Particuliers. -->
                  </p>
               </div>
            </div>
-            <div class="aboutBanner__right aboutBanner__element view__scrolled">
+           <div class="aboutBanner__right aboutBanner__element view__scrolled">
               <div class="aboutBanner__image">
                   <p class="aboutBanner__content-right">
-                    Avec une offre de services complète, je me spécialise dans la gestion administrative, le support client, la facturation, l'organisation, ainsi que le soutien logistique et opérationnel. Chaque projet est une opportunité de travailler avec soin et précision, en restant fidèle à mes principes éthiques.
-                    Ma mission ne se limite pas seulement à accomplir des tâches, mais à devenir un partenaire de confiance, qui contribue activement au succès et à la croissance de votre entreprise. À travers BG Gestion Pro, je crois que la foi peut éclairer chaque aspect du travail, apportant ainsi des solutions professionnelles et humaines à vos besoins.                        
+                    Avec une approche professionnelle, flexible et attentive aux détails, je m’engage à fournir un service de qualité, fondé sur des valeurs de respect, de fidélité et d’intégrité. Grâce à mes compétences linguistiques, je facilite les échanges avec mes clients francophones et néerlandophones, garantissant une communication claire et productive.                        
                   </p>
               </div>
             </div>
@@ -262,6 +274,44 @@
     </section> -->
 
 
+
+
+    <div id="apropos" class="aboutfooter">
+        <div class="container aboutfooter__container block__scrolle">
+            <div class="aboutfooter__right view__scrolled">
+                <div class="aboutfooter__modal">
+                  <div class="aboutfooter__lg-img"></div>
+                </div>
+            </div>
+            <div class="aboutfooter__left view__scrolled">
+                <h2 class="aboutfooter__title">Avec BG Gestion Pro:</h2>
+                <p class="aboutfooter__content">Vous avez l’assurance de collaborer avec une professionnelle bilingue qui place l’intégrité, la rigueur et des valeurs humaines au cœur de son activité.</p>
+                <p class="aboutfooter__link">Collaborer avec BG Gestion Pro, c’est choisir un accompagnement administratif sur-mesure, réalisé avec rigueur et professionnalisme. Je propose un ensemble de services complets, adaptés aux besoins spécifiques de chaque client.</p>
+                <div class="aboutfooter__bule-bottom"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Satrt Commenaire slider  -->
+
+    
+
+    <!--End Commenaire slider  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -294,13 +344,13 @@
                     <h4>follow us</h4>
                     <div class="social-links">
                         <a href="#" class="footer__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#75d217" viewBox="0 0 256 256"><path d="M224,56l-96,88L32,56Z" opacity="0.2"></path><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path></svg></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#bbbbbb" viewBox="0 0 256 256"><path d="M224,56l-96,88L32,56Z" opacity="0.2"></path><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path></svg></a>
                         <a href="#" class="footer__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#75d217" viewBox="0 0 256 256"><path d="M176,32H80A48,48,0,0,0,32,80v96a48,48,0,0,0,48,48h96a48,48,0,0,0,48-48V80A48,48,0,0,0,176,32ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" opacity="0.2"></path><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm64-84a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#bbbbbb" viewBox="0 0 256 256"><path d="M176,32H80A48,48,0,0,0,32,80v96a48,48,0,0,0,48,48h96a48,48,0,0,0,48-48V80A48,48,0,0,0,176,32ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" opacity="0.2"></path><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm64-84a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg></a>
                         <a href="#" class="footer__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#75d217" viewBox="0 0 256 256"><path d="M208,216H160L48,40H96Z" opacity="0.2"></path><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path></svg></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#bbbbbb" viewBox="0 0 256 256"><path d="M208,216H160L48,40H96Z" opacity="0.2"></path><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path></svg></a>
                         <a href="#" class="footer__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#75d217" viewBox="0 0 256 256"><path d="M224,40V216a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8H216A8,8,0,0,1,224,40Z" opacity="0.2"></path><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg></a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#bbbbbb" viewBox="0 0 256 256"><path d="M224,40V216a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8H216A8,8,0,0,1,224,40Z" opacity="0.2"></path><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg></a>
                     </div>
                 </div>
             </div>
