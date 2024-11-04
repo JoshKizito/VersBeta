@@ -916,8 +916,8 @@ ul{
     /* Icons footer */
 
     .social-links a svg {
-        width: 3em;
-        height: 4em;
+        width: 7em;
+        height: 7em;
     }
 
     /* .footer__icon svg {
@@ -967,6 +967,12 @@ ul{
 /* Navbar header */
 
 @media all and (max-width: 767px) {
+
+    .container {
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        max-width: 98em;
+    }
 
     .header {
         width: 100%;
@@ -1021,15 +1027,85 @@ ul{
 @media (max-width: 767px) {
     .home__item {
         font-size: 1.1em;
-       
     }
     .home__content {
-        font-size: 1.1em;
+        font-size: 1.4em;
+        margin-bottom: 1em;
+    }
+
+    .home__sub-title {
+        font-size: 1.2em;
+    }
+    .home__item {
+        width: 30em;
+        font-size: 1.4em;
+        color:rgb(140, 140, 140);
+    }
+
+    .elements__bottom__content {
+        font-size: 1.6em;
+    }
+
+    .about__item__text {
+        font-size: 1.4em;
+    }
+
+    .abouthead__title::after {
+        content:"";
+        position: absolute;
+        bottom: -.60em;
+        left: 0;
+        width: 9%;
+        height: 0.35em;
+        background-color: var(---color-secondary);
+    }
+    
+    .abouthead__title::before {
+        content:"";
+        position: absolute;
+        bottom: -.60em;
+        left: 2.9em;
+        width: 20%;
+        height: 0.35em;
+        background: linear-gradient(to right , #b07830,#b07930a9,#b079302c);
+    }
+
+    .abouthead__content {
+        font-size: 1.4em;
+        margin-bottom: 3em;
+    }
+
+    .abouthead__link {
+        font-size: 1.4em;
+    }
+    .aboutBanner__title {
+        font-size: 1.85em;
+    }
+
+    .aboutBanner__content {
+        font-size: 1.30em;
+    }
+    .aboutBanner__content-right {
+        font-size: 1.30em;
+    }
+    .aboutBanner__right {
+        max-width: 46em;
+    }
+    .aboutChallenge__item {
+        width: 45em;
+        /* background-color: red; */
+    }
+    .aboutChallenge__title {
+        font-size: 1.8em;
+        margin-bottom: 1.1em;
+    }
+    .aboutChallenge__content {
+        font-size: 1.6em;
     }
 }
 
-@media (max-width: 630px) {
-    .home__item {
+/* @media (max-width: 630px) { */
+    /* .home__item {
         font-size: 1.1em;
        
     }
@@ -1039,17 +1115,21 @@ ul{
 
     .elements__bottom__content {
         font-size: 1.5em;
-    }
+    } */
     /* .home__backImage {
         background: none;
     } */
-}
-
+/* } */
 
 @media (max-width: 594px) {
-    .home__backImage {
-        background: none;
+    .container {
+        margin: 0 auto;
+        max-width: 90%;
     }
+    .home__backImage {
+        background: url('./images/folders7.svg') no-repeat 90% 100% / 35%;
+    }
+
     .home__image {
         display: none;
     }
@@ -1073,11 +1153,16 @@ ul{
         height: 22px;
     }
 
+    .elements__bottom__card {
+        margin-bottom: 12px;
+    }
+
     .home__title {
         font-size: 3.5em;
     }
     .home__content {
         font-size: 2em;
+        width: 34em;
     }
     .home__sub-title {
         font-size: 2em;
@@ -1102,6 +1187,7 @@ ul{
 }
 
 @media (max-width: 594px) {
+
     .about {
         position: relative;
         /* padding: 2em 0; */
@@ -1239,12 +1325,7 @@ ul{
     }
 
     .aboutBanner__content {
-        margin: 0; 
-        text-align: justify;
-        /* line-height: 180%; */
         font-size: 2em;
-        font-weight: 400;
-        /* text-transform: uppercase; */
     }
 
     .aboutBanner__right {
@@ -1255,6 +1336,8 @@ ul{
     .aboutBanner__content-right {
         font-size: 2em;
         font-weight: 400;
+        padding: 1.3em;
+        /* background-color: #000000; */
     }
 
     /* AboutChallenge */
@@ -1392,42 +1475,26 @@ ul{
 
     .footer-col ul li a{
         font-size: 1.5em;
-        /* background-color: red; */
     }
 
     .footer-col:nth-child(1) {
         width: 30%;
-        /* background: RED; */
     }
 
     .footer-col:nth-child(3) {
         width: 37%;
-        /* background: seagreen; */
     }
 
 }
 
 
 
-/* @media (max-width: 531px) {
-    .row {
-        display: flex;
-        justify-content: center;
-    }
 
-    .footer-col:nth-child(2) {
-        width: 41%;
+@media (max-width: 401px) {
+    .home__backImage {
+        background: none;
     }
-
-    .footer-col:nth-child(3) {
-        width: 41%;
-    }
-    .footer-col:nth-child(4) {
-        width: 41%;
-    }
-} */
-
-@media (max-width: 440px) {
+    
     .row {
         display: flex;
        flex-direction: column;
@@ -1462,10 +1529,10 @@ ul{
 }
 
 @media (max-width: 400px){
-    .container {
+    /* .container {
         margin: 0 auto;
         max-width: 90%;
-    }
+    } */
 
     .header {
         height: 16.6em;
@@ -1497,7 +1564,6 @@ ul{
     }
 
     .home {
-        /* border: 1px solid red; */
         height: auto;
         
     }
@@ -1532,8 +1598,6 @@ ul{
 
     .abouthead {
         height: auto;
-        /* background-color: red; */
-
     }
 
     .abouthead__container {
@@ -1595,7 +1659,7 @@ ul{
 
 /* --------- Responsive vers tel 400px  aboutFooter --------- */
 
-@media (max-width: 400px) {
+@media (max-width: 441px) {
     
     .aboutfooter__container {
         display: flex;
@@ -1650,6 +1714,22 @@ ul{
 
     .aboutfooter__link {
         font-size: var(---size-title-resp);
+    }
+
+    .footer-col:nth-child(1) {
+        width: 75%;
+    }
+
+    .footer-col:nth-child(2) {
+        width: 100%;
+    }
+
+    .footer-col:nth-child(3) {
+        width: 100%;
+    }
+
+    .footer-col:nth-child(4) {
+        width: 100%;
     }
 }
 
