@@ -12,35 +12,25 @@
 
 <body>
     <header class="header">
-        <div class="container header__container">
+        <nav class="container header__container navbar">
             <div class="header__logo">
                 <img src="./images/bg.png" alt="" class="header__img">
-                 <!-- <p>Back.Ges Pro <span>Office</span></p> -->
+                 
 
             </div>
             <div class="header__elements">
-                <ul class="header__list">
-                    <li class="header__item"><a href="#acceuil" id="acceuil">Acceuil</a></li>
-                    <li class="header__item"><a href="#services">Services</a></li>
-                    <li class="header__item"><a href="#apropos">A propos</a></li>
-                    <li class="header__item"><a href="#objectifs">Objectifs</a></li>
-                    <li class="header__item"><a id="contact">Contactez-nous</a></li>
-                </ul>
-                <div class="header__btns">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </div>
+                <ul class="header__list nav__menu">
+                    <i class="fa-solid fa-x" id="menu-close-button"></i>
 
-        <div class="burger__menu">
-            <ul class="header__list__menu">
-                <li class="header__item"><a href="#acceuil" id="acceuil">Acceuil</a></li>
-                <li class="header__item"><a href="#services">Services</a></li>
-                <li class="header__item"><a href="#apropos">A propos</a></li>
-                <li class="header__item"><a href="#objectifs">Objectifs</a></li>
-                <li class="header__item"><a id="contact">Contactez-nous</a></li>
-            </ul>
-        </div>
+                    <li class="header__item nav__item"><a href="#" class="nav__link" id="acceuil">Acceuil</a></li>
+                    <li class="header__item nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="header__item nav__item"><a href="#apropos" class="nav__link">A propos</a></li>
+                    <li class="header__item nav__item"><a href="#objectifs" class="nav__link">Objectifs</a></li>
+                    <li class="header__item nav__item"><a href="#contact" class="nav__link">Contactez-nous</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="menu-open-button"></i>                
+            </div>
+        </nav>
     </header>
     <section class="home home__backImage">
         <div class="container home__container">
@@ -68,7 +58,7 @@
                     </li>
                     
                 </ul>
-                <!-- <button class="home__button">Essayez-le</button> -->
+                
             </div>
             <div class="home__card home__image">
                 <img src="./images/office__first.svg" alt="" class="home__img">
@@ -78,31 +68,56 @@
     <!-- Element bottom  -->
     <section id="services" class="elements__bottom">
        <div class="container elements__bottom__container block__scrolle">
-            <div class="elements__bottom__card view__scrolled">    
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M136,72v43.05l36.42-18.21a8,8,0,0,1,7.16,14.31l-48,24A8,8,0,0,1,120,128V72a8,8,0,0,1,16,0Zm-8,144a88,88,0,1,1,88-88,8,8,0,0,0,16,0A104,104,0,1,0,128,232a8,8,0,0,0,0-16Zm103.73,5.94a8,8,0,1,1-15.46,4.11C213.44,215.42,203.46,208,192,208s-21.44,7.42-24.27,18.05A8,8,0,0,1,160,232a8.15,8.15,0,0,1-2.06-.27,8,8,0,0,1-5.67-9.79,40,40,0,0,1,17.11-23.32,32,32,0,1,1,45.23,0A40,40,0,0,1,231.73,221.94ZM176,176a16,16,0,1,0,16-16A16,16,0,0,0,176,176Z"></path></svg>
+            <div class="elements__bottom__card view__scrolled">                
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M134,72v46.29l39.32-19.66a6,6,0,0,1,5.36,10.74l-48,24A6,6,0,0,1,122,128V72a6,6,0,0,1,12,0Zm-6,146a90,90,0,1,1,90-90,6,6,0,0,0,12,0A102,102,0,1,0,128,230a6,6,0,0,0,0-12Zm101.8,4.46a6,6,0,0,1-11.6,3.08C215.14,214,204.37,206,192,206s-23.14,8-26.2,19.54A6,6,0,0,1,160,230a6.26,6.26,0,0,1-1.54-.2,6,6,0,0,1-4.26-7.34A38.09,38.09,0,0,1,172.72,199a30,30,0,1,1,38.56,0A38.09,38.09,0,0,1,229.8,222.46ZM174,176a18,18,0,1,0,18-18A18,18,0,0,0,174,176Z"></path></svg>
                 <div class="elements__bottom__content">
                     Gestion des plannings
                 </div>
             </div>
-            <div class="elements__bottom__card view__scrolled">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M216,72H131.31L104,44.69A15.86,15.86,0,0,0,92.69,40H40A16,16,0,0,0,24,56V200.62A15.4,15.4,0,0,0,39.38,216H216.89A15.13,15.13,0,0,0,232,200.89V88A16,16,0,0,0,216,72ZM92.69,56l16,16H40V56ZM216,200H40V88H216Zm-88-88a8,8,0,0,1,8,8v16h16a8,8,0,0,1,0,16H136v16a8,8,0,0,1-16,0V152H104a8,8,0,0,1,0-16h16V120A8,8,0,0,1,128,112Z"></path></svg>
+            <div class="elements__bottom__card view__scrolled">                
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M224,66H154L125.73,44.8a14,14,0,0,0-8.4-2.8H72A14,14,0,0,0,58,56V74H40A14,14,0,0,0,26,88V200a14,14,0,0,0,14,14H192.89A13.12,13.12,0,0,0,206,200.89V182h18.89A13.12,13.12,0,0,0,238,168.89V80A14,14,0,0,0,224,66ZM194,200.89a1.11,1.11,0,0,1-1.11,1.11H40a2,2,0,0,1-2-2V88a2,2,0,0,1,2-2H85.33a2,2,0,0,1,1.2.4l29.87,22.4A6,6,0,0,0,120,110h72a2,2,0,0,1,2,2Zm32-32a1.11,1.11,0,0,1-1.11,1.11H206V112a14,14,0,0,0-14-14H122L93.73,76.8a14,14,0,0,0-8.4-2.8H70V56a2,2,0,0,1,2-2h45.33a2,2,0,0,1,1.2.4L148.4,76.8A6,6,0,0,0,152,78h72a2,2,0,0,1,2,2Z"></path></svg>
                 <div class="elements__bottom__content">
                     Traitement des documents
                 </div>
             </div>
-            <div class="elements__bottom__card view__scrolled">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#b07830" viewBox="0 0 256 256"><path d="M216,48H40a8,8,0,0,0-8,8V208a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V160h48v16a16,16,0,0,0,16,16h40a16,16,0,0,0,16-16V56A8,8,0,0,0,216,48ZM88,208H48V128H88Zm0-96H48V64H88Zm64,32H104V64h48Zm56,32H168V128h40Zm0-64H168V64h40Z"></path></svg>
+            <div class="elements__bottom__card view__scrolled">                
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M214,152.09V216a6,6,0,0,1-6,6H48a6,6,0,0,1-6-6V152.09a6,6,0,0,1,12,0V210H202V152.09a6,6,0,0,1,12,0Zm-126,30h80a6,6,0,1,0,0-12H88a6,6,0,1,0,0,12Zm5.4-52.93,77.27,20.67a6,6,0,1,0,3.11-11.57L96.5,117.54a6,6,0,1,0-3.1,11.58Zm18.93-49.74,69.28,40a6.05,6.05,0,0,0,3,.8,6,6,0,0,0,3-11.18L118.33,69a6,6,0,1,0-6,10.38Zm87.75,13.35a6,6,0,0,0,8.48-8.48L152,27.76a6,6,0,1,0-8.48,8.47Z"></path></svg>
                 <div class="elements__bottom__content">
                     Gestion des stocks
                 </div>
             </div>
        </div>
     </section>
+    <!-- second section elements__bottom -->
+    <section class="elements__bottom scndElement__bottom">
+        <div class="container elements__bottom__container block__scrolle">
+            <div class="elements__bottom__card view__scrolled">    
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M102,109.5v-72a6,6,0,0,0-8-5.66A102,102,0,0,0,27.7,146.59a6,6,0,0,0,8.9,4.11l62.4-36A6,6,0,0,0,102,109.5ZM90,106l-51.66,29.8Q38,131.91,38,128A90.1,90.1,0,0,1,90,46.42Zm38-80a6,6,0,0,0-6,6v93L42.2,171.46a6,6,0,0,0-2.15,8.22A102,102,0,1,0,128,26Zm0,192a90.48,90.48,0,0,1-74.38-39.31L131,133.61a6,6,0,0,0,3-5.19V38.2A90,90,0,0,1,128,218Z"></path></svg>
+                <div class="elements__bottom__content">
+                    Support client
+                </div>
+            </div>
+            <div class="elements__bottom__card view__scrolled">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M28,126a6,6,0,0,1,0-12H56a10,10,0,0,0,0-20H40a22,22,0,0,1,0-44h2V48a6,6,0,0,1,12,0v2H64a6,6,0,0,1,0,12H40a10,10,0,0,0,0,20H56a22,22,0,0,1,0,44H54v2a6,6,0,0,1-12,0v-2ZM230,56V192a14,14,0,0,1-14,14H40a14,14,0,0,1-14-14V152a6,6,0,0,1,12,0v40a2,2,0,0,0,2,2H162V158H80a6,6,0,0,1,0-12h82V110H104a6,6,0,0,1,0-12H218V62H96a6,6,0,0,1,0-12H224A6,6,0,0,1,230,56Zm-56,90h44V110H174Zm44,46V158H174v36h42A2,2,0,0,0,218,192Z"></path></svg>
+                <div class="elements__bottom__content">
+                    Facturation et paiements
+                </div>
+            </div>
+             <div class="elements__bottom__card view__scrolled">
+                
+                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#b07830" viewBox="0 0 256 256"><path d="M128,26C75.29,26,34,49.72,34,80v96c0,30.28,41.29,54,94,54s94-23.72,94-54V80C222,49.72,180.71,26,128,26Zm0,12c44.45,0,82,19.23,82,42s-37.55,42-82,42S46,102.77,46,80,83.55,38,128,38Zm82,138c0,22.77-37.55,42-82,42s-82-19.23-82-42V154.79C62,171.16,92.37,182,128,182s66-10.84,82-27.21Zm0-48c0,22.77-37.55,42-82,42s-82-19.23-82-42V106.79C62,123.16,92.37,134,128,134s66-10.84,82-27.21Z"></path></svg>
+                 <div class="elements__bottom__content">
+                    Gestion des bases de données.
+                 </div>
+             </div>
+        </div>
+    </section>
     <!-- Begin About -->
     <div class="about">
         <div class="container about__container block__scrolle">
             <div class="about__card about__image view__scrolled">
-                <!-- <img src="./images/pexels4.jpg" alt="" class="about__img"> -->
+                
             </div>
             <div class="about__card about__text">
                 <h2 class="about__title view__scrolled">Pourquoi me choisir ?</h2>
@@ -177,8 +192,6 @@
                 <h3 class="aboutBanner__title">About </h3>
                  <p class="aboutBanner__content">
                     Chez BG Gestion Pro, je mets à votre service une expertise bilingue en néerlandais et en français, combinée à une solide expérience dans la facturation, la relation clientèle et la comptabilité. Ces compétences me permettent d’offrir un support Back Office efficace, adapté aux exigences administratives et opérationnelles de chaque entreprise.
-                  <!-- Bauzar - Digital est une société IT, basée sur la création de site web, Application Mobile, et l'automatisation des produits techniques. Nous travaillons
-                  dans plusieurs domaines : éducatif, médical, Domaine Public, des Entreprise et Particuliers. -->
                  </p>
               </div>
            </div>
@@ -237,42 +250,6 @@
 
     <!-- Formulaire de contact -->
 
-    
-    <!-- <section class="footer">
-        <div class="container footer_container">
-          <div class="footer_childs">
-            <div class="links_footer">
-              <a href="/" class="logo_footer">Astracom</a>
-            </div>
-            <div class="childs_links">
-                <a href="#" class="child_links__item"><i class="fa-brands fa-x-twitter"></i>Acceuil</a>
-                <a href="#" class="child_links__item"><i class="fa-brands fa-facebook"></i>A propos</a>
-                <a href="#" class="child_links__item"><i class="fa-brands fa-instagram"></i>Services</a>
-                <a href="#" class="child_links__item"><i class="fa-brands fa-instagram"></i>Contactez-nous</a>
-                <a href="#" class="child_links__item"><i class="fa-brands fa-instagram"></i>...</a>
-            </div>
-
-            <div class="childs_links">
-              <a href="#" class="child_links__item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="44" fill="#161717" viewBox="0 0 256 256"><path d="M215.94,182.08A48.33,48.33,0,0,1,168,224,136,136,0,0,1,32,88,48.33,48.33,0,0,1,73.92,40.06a8,8,0,0,1,8.3,4.8l21.13,47.2a8,8,0,0,1-.66,7.53L81.32,125a7.93,7.93,0,0,0-.54,7.81c8.27,16.93,25.77,34.22,42.75,42.41a7.92,7.92,0,0,0,7.83-.59l25-21.3a8,8,0,0,1,7.59-.69l47.16,21.13A8,8,0,0,1,215.94,182.08Z" opacity="0.2"></path><path d="M144.27,45.93a8,8,0,0,1,9.8-5.66,86.22,86.22,0,0,1,61.66,61.66,8,8,0,0,1-5.66,9.8A8.23,8.23,0,0,1,208,112a8,8,0,0,1-7.73-5.94,70.35,70.35,0,0,0-50.33-50.33A8,8,0,0,1,144.27,45.93Zm-2.33,41.8c13.79,3.68,22.65,12.54,26.33,26.33A8,8,0,0,0,176,120a8.23,8.23,0,0,0,2.07-.27,8,8,0,0,0,5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8,8,0,1,0-4.13,15.46Zm81.94,95.35A56.26,56.26,0,0,1,168,232C88.6,232,24,167.4,24,88A56.26,56.26,0,0,1,72.92,32.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,109.39,104c-.18.27-.37.52-.57.77L88,129.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,223.88,183.08Zm-15.88-2s-.07,0-.11,0h0l-47-21.05-24.35,20.71a8.44,8.44,0,0,1-.74.56,16,16,0,0,1-15.75,1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16,16,0,0,1,1-15.7,6.13,6.13,0,0,1,.57-.77L96,95.15l-21-47a.61.61,0,0,1,0-.12A40.2,40.2,0,0,0,40,88,128.14,128.14,0,0,0,168,216,40.21,40.21,0,0,0,208,181.07Z"></path></svg>+32(0032) 492 42 76 50</a>
-
-
-              <a href="#" class="child_links__item"><img src="./images/envelope-duotone.svg"></img>backOffice@gestion</a>
-              <a href="#" class="child_links__item"><img src="./images/instagram-logo-duotone.svg"></img>Back Office</a>
-              <a href="#" class="child_links__item"><img src="./imagesplannings.svg"></img>Mon - Frid | 08.30 - 15.30</a>
-              <a href="#" class="child_links__item"><img src="./images/path-duotone.svg"></img>Av.Bertha. rue Geraldo n.2024</a>
-            </div>
-
-          </div>
-          <div class="made">
-            <p class="made__title">
-              Made In <a href="#Webflow" class="made_link">JoshKizito</a>. © 2024.
-            </p>
-          </div>
-        </div>
-    </section> -->
-
-
 
 
     <div id="apropos" class="aboutfooter">
@@ -316,7 +293,7 @@
 
 
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="container">
             <div class="row">
 
@@ -338,8 +315,8 @@
                 <div class="footer-col">
                     <h4>Contactez-nous</h4>
                     <ul>
-                        <li><a href="#">backOffice@gestion</a></li>
-                        <li><a href="#">Back Gestion  Office Pro</a></li>
+                        <li><a href="mailto:bg.gestionpro@gmail.com?subject=Demande d'information&body=Bonjour,">bg.gestionpro@gmail.com</a></li>
+                        <li><a href="tel:+32492427650">Tel: +32 492 42 76 50</a></li>
                         <li><a href="#">Mon - Frid | 08.30 - 15.30</a></li>
                         <li><a href="#">Av.Bertha. rue Geraldo n.2024</a></li>
                     </ul>
